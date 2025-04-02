@@ -16,3 +16,13 @@
   --sidebar-bg: ;
   --border-color: ;
 }
+
+ul#top-navigation li img, ul#bottom-navigation li img, img[alt="magnify icon"], img[alt="bell icon"], ul.model-features li img{
+  width: calc(1em + 1vw);
+  aspect-ratio: 1 / 1;
+}
+
+section#side-navbar div.dashboard-logo img{
+  width: calc(2em + 1.5vw);
+  aspect-ratio: 1 / 1;
+}
