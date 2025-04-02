@@ -17,6 +17,8 @@
   --border-color: ;
 }
 
+/* jpeg and svg images dimensions */
+
 ul#top-navigation li img, ul#bottom-navigation li img, img[alt="magnify icon"], img[alt="bell icon"], ul.model-features li img{
   width: calc(1em + 1vw);
   aspect-ratio: 1 / 1;
@@ -25,4 +27,15 @@ ul#top-navigation li img, ul#bottom-navigation li img, img[alt="magnify icon"], 
 section#side-navbar div.dashboard-logo img{
   width: calc(2em + 1.5vw);
   aspect-ratio: 1 / 1;
+}
+
+img[alt="other user profile"], div#top-features div.user-info img[alt="user profile"]{
+  width: calc(2rem + 1vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+div#user-profile img.small-user-profile{
+  width: calc(1.5rem + 1vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 }
