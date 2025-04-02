@@ -1,9 +1,18 @@
-@import url(./normalize.css);
+@import url(./normalize.css); /*modern css resetting styles*/
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   list-style-type: none;
+}
+
+@font-face{
+  font-family: 'Railway';
+  src: url('../content/Railway_font/Raleway-ExtraLight.ttf') format('ttf');
+}
+
+:root{
+  --sidebar-bg: ;
+  --border-color: ;
 }
