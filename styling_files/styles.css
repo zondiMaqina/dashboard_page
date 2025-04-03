@@ -17,6 +17,10 @@
   --border-color: ;
 }
 
+body{
+  min-height: 100vh;
+}
+
 /* jpeg and svg images dimensions */
 
 ul#top-navigation li img, ul#bottom-navigation li img, img[alt="magnify icon"], img[alt="bell icon"], ul.model-features li img{
@@ -38,4 +42,81 @@ div#user-profile img.small-user-profile{
   width: calc(1.5rem + 1vw);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+}
+
+/* styleing the layout */
+
+body{
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 4fr;
+  grid-template-rows: 1fr;
+}
+
+section#main-content{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+section#projects{
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section#projects > h2{
+  grid-column: 1 / -1;
+}
+
+section#projects article ul{
+  display: flex;
+}
+
+section#main-content section#top-content{
+  padding: 10px 30px;
+  display: grid;
+  gap: 20px;
+  grid-column: 1 / -1;
+}
+
+section#main-content section#top-content div.top, div#user-profile{
+  display: flex;
+  border: 1px solid;
+}
+
+
+div.top div#search-section{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+}
+
+div.top div#user-profile{
+  display: flex;
+  gap: calc(5px + 1vw);
+  align-items: center;
+}
+
+div.top div#search-section input{
+  width: 80%;
+  height: 25px;
+}
+
+section#top-content div#top-features, div.user-info, ul#short-features{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 5px;
+}
+
+section#top-content div#top-features{
+  justify-content: space-between;
+}
+
+div#top-features div.user-info{
+  column-gap: 15px;
+}
+
+div#top-features ul#short-features{
+  column-gap: 20px;
 }
