@@ -48,27 +48,100 @@ div#user-profile img.small-user-profile{
 
 body{
   display: grid;
-  grid-template-columns: minmax(150px, 1fr) 4fr;
+  grid-template-columns: minmax(110px, 1fr) 5fr;
   grid-template-rows: 1fr;
+}
+
+section#side-navbar{
+  padding: calc(10px + 0.2vw);
+  display: flex;
+  flex-flow: column;
+  row-gap: 30px;
+}
+
+section#side-navbar ul li, section#side-navbar div.dashboard-logo{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+section#side-navbar ul{
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
 }
 
 section#main-content{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 40px;
+}
+
+section#main-content > div{
+  display: grid;
+  grid-template-rows: max-content 1fr;
 }
 
 section#projects{
   grid-column: 1 / 3;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 0 20px 30px 20px;
 }
 
-section#projects > h2{
-  grid-column: 1 / -1;
+section#main-content > div h2{
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+section#main-content section#side-content{
+  margin: 0 15px 30px 0px;
+  display: flex;
+  flex-flow: column;
+  gap: 60px;
+}
+
+section#side-content article#announcements{
+  border: 1px solid;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+section#side-content article#announcements div.announcement{
+  padding: 10px;
+}
+
+section#side-content article#trending-topics{
+  display: flex;
+  flex-flow: column;
+  padding: 0 15px 15px 15px;
+  border: 1px solid;
+}
+
+section#side-content article#trending-topics div.other-users{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+section#projects article{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: calc(5px + 1vw);
+  border: 1px solid;
+}
+
+section#projects article h3{
+  margin-bottom: 5px;
 }
 
 section#projects article ul{
   display: flex;
+  column-gap: 10px;
+  align-self: end;
 }
 
 section#main-content section#top-content{
@@ -80,7 +153,6 @@ section#main-content section#top-content{
 
 section#main-content section#top-content div.top, div#user-profile{
   display: flex;
-  border: 1px solid;
 }
 
 
@@ -109,8 +181,13 @@ section#top-content div#top-features, div.user-info, ul#short-features{
   margin-right: 5px;
 }
 
+section#top-content{
+  border: 1px solid;
+}
+
 section#top-content div#top-features{
   justify-content: space-between;
+  align-items: center;
 }
 
 div#top-features div.user-info{
