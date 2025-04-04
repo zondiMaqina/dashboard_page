@@ -85,6 +85,11 @@ section#side-navbar ul{
   gap: 8px;
 }
 
+section#side-navbar ul li:hover{
+filter: opacity(80%);
+  cursor: pointer;
+}
+
 section#main-content{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -166,6 +171,10 @@ div#top-features ul#short-features li{
   padding: 8px 20px;
   border-radius: 20px;
   color: white;
+}
+
+div#top-features ul#short-features li:hover{
+  filter: opacity(80%);
 }
 
 section#projects{
