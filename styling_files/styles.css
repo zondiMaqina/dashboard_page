@@ -1,15 +1,16 @@
 @import url(./normalize.css); /*modern css resetting styles*/
 
+@font-face{
+  font-family: 'Railway';
+  src: url(../content/Railway_font/Raleway-ExtraLight.ttf);
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
-}
-
-@font-face{
-  font-family: 'Railway';
-  src: url('../content/Railway_font/Raleway-ExtraLight.ttf') format('ttf');
+  font-family: 'Railway', sans-serif;
 }
 
 :root{
@@ -26,6 +27,7 @@ body{
 
 h2, h3{
   color: var(--button-bg);
+  font-weight: bold;
 }
 
 /* jpeg and svg images dimensions */
@@ -175,6 +177,7 @@ div#top-features ul#short-features li{
 
 div#top-features ul#short-features li:hover{
   filter: opacity(80%);
+  cursor: pointer;
 }
 
 section#projects{
@@ -250,4 +253,8 @@ section#projects article ul{
   display: flex;
   column-gap: 10px;
   align-self: end;
+}
+
+p.other-user-name{
+  font-weight: bold;
 }
